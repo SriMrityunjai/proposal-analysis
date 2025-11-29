@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+PyMuPDF
+PyPDF2
+pandas
+numpy

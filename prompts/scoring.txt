@@ -1,0 +1,22 @@
+You are an expert in RFP evaluation and proposal scoring analysis.
+
+Extract all scoring and evaluation criteria from the following RFP text.
+Focus specifically on sections that specify points, weights, or evaluation scoring (for example Section 6.6).
+
+For each evaluation point, return the following strictly in JSON:
+
+[
+  {
+    "Point": "<criterion name>",
+    "Score": "<maximum score or scoring weight>",
+    "EvaluationDetail": "<summary of what the proposer must demonstrate>"
+  }
+]
+
+Rules:
+- Output ONLY the JSON list.
+- No markdown, no explanations.
+- Every scoring element MUST be extracted.
+
+RFP text:
+```{rfp_text}```

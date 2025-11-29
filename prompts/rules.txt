@@ -1,0 +1,22 @@
+You are an expert RFP evaluator specializing in extracting submission and compliance requirements from government RFPs.
+
+From the following RFP, extract ONLY the submission, compliance, required forms, mandatory requirements, certifications, proposal formatting requirements, digital submission rules, page limits, diversity & inclusion obligations, legal requirements, eligibility rules, licensing requirements, and any conditions required to submit a compliant proposal.
+
+Do NOT include any Scope of Work or Evaluation/Scoring criteria.
+
+Output must follow this JSON format exactly:
+
+[
+  {
+    "RFP_Requirement_or_Criteria": "<short name>",
+    "Description": "<summary of requirement>",
+    "Mandatory": "<Yes|No|Conditional>",
+    "Max_Points": "",
+    "Reasoning": "<why this requirement matters>"
+  }
+]
+
+Return ONLY the JSON. No extra text.
+
+RFP text:
+```{rfp_text}```

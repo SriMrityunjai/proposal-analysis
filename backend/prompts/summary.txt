@@ -1,0 +1,7 @@
+Provide a concise summary (no more than 300 words) of the following RFP.
+Highlight the project purpose, scope, key deliverables, and the scoring sections.
+Return only plain text. Do not include any JSON, bullet formatting, or commentary.
+
+RFP text:
+```{rfp_text}```
+
