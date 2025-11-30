@@ -12,7 +12,12 @@ import re
 # ---------------------------------------------------------
 # Backend URL
 # ---------------------------------------------------------
-BACKEND_URL = os.environ.get("BACKEND_URL", "http://localhost:8000")
+# BACKEND_URL = os.environ.get("BACKEND_URL", "http://localhost:8000")
+# REQUEST_TIMEOUT = 300
+# ---------------------------------------------------------
+# Backend URL-only use when use render to share your url
+# ---------------------------------------------------------
+BACKEND_URL = "https://proposal-analysis.onrender.com/"
 REQUEST_TIMEOUT = 300
 
 st.set_page_config(page_title="RFP Proposal Analysis", layout="wide")
