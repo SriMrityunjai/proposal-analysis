@@ -19,7 +19,7 @@ logging.basicConfig(level=logging.INFO)
 OPENAI_API_KEY = os.getenv("OPENROUTER_API_KEY") or os.getenv("OPENAI_API_KEY")
 OPENAI_BASE_URL = os.getenv("OPENROUTER_BASE_URL", os.getenv("OPENAI_BASE_URL", "https://openrouter.ai/api/v1"))
 #OPENAI_MODEL = os.getenv("OPENAI_MODEL", os.getenv("OPENROUTER_MODEL", "tngtech/deepseek-r1t2-chimera:free"))
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", os.getenv("OPENROUTER_MODEL", "x-ai/grok-4.1-fast:free"))
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", os.getenv("OPENROUTER_MODEL", "arcee-ai/trinity-large-preview:free"))
 
 if not OPENAI_API_KEY:
     logging.warning("OPENAI/OPENROUTER API key not found in environment variables (OPENROUTER_API_KEY or OPENAI_API_KEY).")
